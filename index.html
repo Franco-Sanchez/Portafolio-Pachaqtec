@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto base</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     
@@ -11,71 +13,72 @@
     <header>
         <h1>Pachaqtec</h1>
         
-        <p>Hola, mi nombre <span>es Franco Sánchez</span></p>
+        <p class="subtitulo">Hola, mi nombre <span>es Franco Sánchez</span></p>
     </header>
     
     <main>
         <!-- Seccion 'Sobre mi' -->
-        <section>
-            <h2>Sobre mi</h2>
+        <section class="flexible">
+            <h2 class="subtitulo">Sobre mi</h2>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse.</p>
             
-            <a href="#">Ver CV</a>
+            <a class="flexible" href="#">Ver CV</a>
         </section>
 
         <!-- Seccion 'Mis Skills' -->
-        <section>
-            <h2>Mis Skills</h2>
-            
-            <article>
-                <h4>HTML</h4>
-                <div>
-                    <span></span>
-                </div>
-            </article>
-            
-            <article>
-                <h4>CSS</h4>
-                <div>
-                    <span></span>
-                </div>
-            </article>
-            
-            <article>
-                <h4>Javascript</h4>
-                <div>
-                    <span></span>
-                </div>
-            </article>
-            
-            <article>
-                <h4>Vue</h4>
-                <div>
-                    <span></span>
-                </div>
-            </article>
-            
-            <article>
-                <h4>Flexbox</h4>
-                <div>
-                    <span></span>
-                </div>
-            </article>
+        <section class="flexible">
+            <h2 class="subtitulo">Mis Skills</h2>
+            <div class="grilla">
+                <article class="flexible">
+                    <h4>HTML</h4>
+                    <div class="skills">
+                        <span></span>
+                    </div>
+                </article>
+                
+                <article class="flexible">
+                    <h4>CSS</h4>
+                    <div class="skills">
+                        <span></span>
+                    </div>
+                </article>
+                
+                <article class="flexible">
+                    <h4>Javascript</h4>
+                    <div class="skills">
+                        <span></span>
+                    </div>
+                </article>
+                
+                <article class="flexible">
+                    <h4>Vue</h4>
+                    <div class="skills">
+                        <span></span>
+                    </div>
+                </article>
+                
+                <article class="flexible">
+                    <h4>Flexbox</h4>
+                    <div class="skills">
+                        <span></span>
+                    </div>
+                </article>
 
-            <article>
-                <h4>CSS Grid</h4>
-                <div>
-                    <span></span>
-                </div>
-            </article>
+                <article class="flexible">
+                    <h4>CSS Grid</h4>
+                    <div class="skills">
+                        <span></span>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- Seccion 'Portafolio' -->
-        <section>
-            <h2>Portafolio</h2>
+        <section class="flexible">
+            <h2 class="subtitulo">Portafolio</h2>
             
-            <article>
+            <article class="grilla">
                 <img src="./images/portafolio1.png">
                 <img src="./images/portafolio2.png">
                 <img src="./images/portafolio3.png">
@@ -88,10 +91,10 @@
         </section>
         
         <!-- Seccion 'Clientes' -->
-        <section>
-            <h2>Clientes</h2>
+        <section class="flexible">
+            <h2 class="subtitulo">Clientes</h2>
             
-            <article>
+            <article class="grilla">
                 <img src="./images/clientes1.png">
                 <img src="./images/clientes2.png">
                 <img src="./images/clientes3.png">
@@ -100,15 +103,16 @@
         </section>
 
         <!-- Seccion 'Contacto' -->
-        <section>
-            <h2>Contacto</h2>
+        <section class="flexible">
+            <h2 class="subtitulo">Contacto</h2>
             
-            <form action="#" autocomplete="off">
+            <form class="grilla" action="#" autocomplete="off">
                 <input type="text" placeholder="Nombre" required pattern="[A-Za-z]+">
                 <input type="text" placeholder="Apellido" required pattern="[A-Za-z]+">
                 <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Telefono" minlength="9" maxlength="9" required>
                 <textarea placeholder="Descripcion"></textarea>
-                <button type="button">ENVIAR</button>
+                <button type="submit">ENVIAR</button>
             </form>
         </section>
     </main>
